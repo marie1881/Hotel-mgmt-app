@@ -1,1 +1,1 @@
-# mernStackTest
+# Hotel Management Application
