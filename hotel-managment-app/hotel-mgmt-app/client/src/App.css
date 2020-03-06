@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary-color: #f3b96c;
+  --primary-color: #e9b24c;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -62,19 +62,12 @@ img {
   margin-bottom: 1rem;
 }
 
-.accountCreate {
-  font-size: 1.5rem;
-  margin: 1rem 40rem 1rem;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-primary {
-  color: #ecb06a;
-  padding: 2rem;
-  margin: 6rem 50rem;
+  color: var(--primary-color);
 }
 
 .text-dark {
@@ -124,7 +117,7 @@ img {
   margin: 0.5rem 0;
 }
 .my-1 {
-  margin: 1rem 40rem;
+  margin: 1rem 0;
 }
 .my-2 {
   margin: 2rem 0;
@@ -169,12 +162,6 @@ img {
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
-}
-
-.btn-primary-reg {
-  background: #ecb06a;
-  color: #fff;
-  margin: 1rem 40rem;
 }
 
 .btn-light,
@@ -249,7 +236,7 @@ img {
 
 /* Forms */
 .form .form-group {
-  margin: 1rem 40rem;
+  margin: 1.2rem 0;
 }
 
 .form .form-text {
@@ -536,7 +523,7 @@ button {
   }
 
   .navbar h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   .navbar .welcome {
