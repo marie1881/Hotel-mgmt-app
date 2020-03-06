@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-const Alert = props => {
+const Alert = ({ alerts }) => {
   return <div></div>;
 };
 
 Alert.propTypes = {};
 
-export default Alert;
+const mapStateToProps = state => ({
+  alerts: state.alert
+});
+
+export default connect()(Alert);
