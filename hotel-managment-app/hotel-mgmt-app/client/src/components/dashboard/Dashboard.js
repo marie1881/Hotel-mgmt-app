@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-function Dashboard(props) {
+const Dashboard = props => {
   return <div>Dashboard</div>;
-}
+};
 
 Dashboard.propTypes = {};
 
-export default Dashboard;
+export default connect(mapStateToProps)(Dashboard);
