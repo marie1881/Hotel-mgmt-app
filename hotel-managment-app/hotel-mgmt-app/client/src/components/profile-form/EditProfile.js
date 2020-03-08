@@ -2,9 +2,9 @@ import React, { Fragment, useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { createProfile } from "../../actions/profile";
+import { createProfile, getCurrentProfile } from "../../actions/profile";
 
-const CreateProfile = ({ createProfile, history }) => {
+const EditProfile = ({ createProfile, history }) => {
   //Minus the experience and education
   const [formData, setFormData] = useState({
     company: "",
@@ -225,4 +225,6 @@ CreateProfile.propTypes = {
   createProfile: PropTypes.func.isRequired
 };
 
-export default connect(null, { createProfile })(withRouter(CreateProfile));
+export default connect(null, { createProfile, getCurrentProfile })(
+  withRouter(EditProfile)
+);
